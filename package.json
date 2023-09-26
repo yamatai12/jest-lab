@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "test--runInBand": "jest --runInBand",
-    "test--maxWorkers=49%": "jest --maxWorkers=49%"
+    "test--maxWorkers=49%": "jest --maxWorkers=49%",
+    "tsc-swc-jest": "tsc --noEmit && npx jest"
   },
   "repository": {
     "type": "git",
