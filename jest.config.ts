@@ -5,6 +5,7 @@ const config: Config = {
   transform: {
     "^.+.ts$": "ts-jest",
   },
+  runner: "jest-light-runner",
 };
 
 export default config;
