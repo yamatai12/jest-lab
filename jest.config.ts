@@ -5,6 +5,7 @@ const config: Config = {
   transform: {
     "^.+.ts$": "ts-jest",
   },
+  cacheDirectory: "node_modules/.cache/jest",
 };
 
 export default config;
