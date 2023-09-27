@@ -22,9 +22,6 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
-    - name: Get number of CPU cores
-      id: cpu-cores
-      uses: SimenB/github-actions-cpu-cores@v2
     - name: Run Jest tests
-      run: npx jest  --max-workers ${{ steps.cpu-cores.outputs.count }}
+      run: npm run test
       
